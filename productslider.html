@@ -9,35 +9,53 @@
 </head>
 
 <body>
-    <div class="product-slider">
-        <div class="product" id="product1" data-color="#ff5733" onclick="changeBackgroundColor('#ff5733')">
-            <img src="img1.webp" alt="Producto 1">
-            <div class="product-info">
-                <h3>MacBook Pro</h3>
-                <p>Un portátil elegante y potente, ideal para profesionales creativos y desarrolladores.</p>
+    <div class="slider-container">
+        <button class="nav-btn left" onclick="navigate('prev')">&lt;</button>
+
+        <div class="product-slider">
+            <div class="product" id="product1" data-color="#ff5733">
+                <div class="product-image">
+                    <img src="img1.webp" alt="Producto 1">
+                </div>
+                <div class="product-details">
+                    <h3>MacBook Pro</h3>
+                    <p class="price">$2,000</p>
+                    <p>Un portátil elegante y potente, ideal para profesionales creativos y desarrolladores.</p>
+                </div>
+            </div>
+            <div class="product" id="product2" data-color="#33c1ff">
+                <div class="product-image">
+                    <img src="img2.avif" alt="Producto 2">
+                </div>
+                <div class="product-details">
+                    <h3>Teclado Mecánico</h3>
+                    <p class="price">$120</p>
+                    <p>Teclado mecánico RGB para una experiencia de escritura rápida y cómoda.</p>
+                </div>
+            </div>
+            <div class="product" id="product3" data-color="#75ff33">
+                <div class="product-image">
+                    <img src="img3.png" alt="Producto 3">
+                </div>
+                <div class="product-details">
+                    <h3>Portátil Gaming</h3>
+                    <p class="price">$1,500</p>
+                    <p>Portátil con hardware potente y diseño ideal para videojuegos de alto rendimiento.</p>
+                </div>
+            </div>
+            <div class="product" id="product4" data-color="#ff33d4">
+                <div class="product-image">
+                    <img src="img4.webp" alt="Producto 4">
+                </div>
+                <div class="product-details">
+                    <h3>PS4 Gaming Console</h3>
+                    <p class="price">$400</p>
+                    <p>Consola PS4 de última generación con una vasta biblioteca de juegos para todas las edades.</p>
+                </div>
             </div>
         </div>
-        <div class="product" id="product2" data-color="#33c1ff" onclick="changeBackgroundColor('#33c1ff')">
-            <img src="img2.avif" alt="Producto 2">
-            <div class="product-info">
-                <h3>Teclado Mecánico</h3>
-                <p>Teclado mecánico RGB para una experiencia de escritura rápida y cómoda.</p>
-            </div>
-        </div>
-        <div class="product" id="product3" data-color="#75ff33" onclick="changeBackgroundColor('#75ff33')">
-            <img src="img3.png" alt="Producto 3">
-            <div class="product-info">
-                <h3>Portátil Gaming</h3>
-                <p>Portátil con hardware potente y diseño ideal para videojuegos de alto rendimiento.</p>
-            </div>
-        </div>
-        <div class="product" id="product4" data-color="#ff33d4" onclick="changeBackgroundColor('#ff33d4')">
-            <img src="img4.webp" alt="Producto 4">
-            <div class="product-info">
-                <h3>PS4 Gaming Console</h3>
-                <p>Consola PS4 de última generación con una vasta biblioteca de juegos para todas las edades.</p>
-            </div>
-        </div>
+
+        <button class="nav-btn right" onclick="navigate('next')">&gt;</button>
     </div>
 
     <script src="script.js"></script>
