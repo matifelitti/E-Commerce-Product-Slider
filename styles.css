@@ -1,3 +1,20 @@
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #33c1ff;
+  --highlight-color: #75ff33;
+  --tertiary-color: #ff33d4;
+  --font-family: "Arial", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-heading: 1.5rem;
+  --font-size-price: 1.25rem;
+  --font-size-text: 1rem;
+  --padding-base: 1.25rem;
+  --padding-details: 1.875rem;
+  --border-radius: 0.625rem;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +22,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: var(--font-family);
   background-color: #f4f4f4;
   color: #333;
   overflow-x: hidden;
@@ -13,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: var(--font-size-base);
 }
 
 .slider-container {
@@ -21,10 +39,10 @@ body {
   align-items: center;
   position: relative;
   width: 80%;
-  max-width: 1200px;
-  margin-top: 50px;
+  max-width: 75rem;
+  margin-top: 3.125rem;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
@@ -36,28 +54,26 @@ body {
 
 .product {
   flex: 0 0 100%;
-  max-width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   background-color: #fff;
-  padding: 20px;
+  padding: var(--padding-base);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .product-image img {
-  margin: 20px;
-  width: 100%;
-  height: 400px;
+  margin: var(--padding-base);
+  width: 90%;
+  height: 25rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 .product-details {
-  padding-left: 30px;
+  padding-left: var(--padding-details);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,27 +82,26 @@ body {
 }
 
 .product-details h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #333;
+  font-size: var(--font-size-heading);
+  margin-bottom: 0.625rem;
 }
 
 .product-details .price {
-  font-size: 20px;
+  font-size: var(--font-size-price);
   font-weight: bold;
-  color: #ff5733;
-  margin-bottom: 15px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 .product-details p {
-  margin: 10px;
-  font-size: 16px;
+  margin: 0.625rem 0;
+  font-size: var(--font-size-text);
   color: #666;
 }
 
 .product:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow-hover);
 }
 
 .product-slider {

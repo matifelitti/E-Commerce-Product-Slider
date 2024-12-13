@@ -1,5 +1,4 @@
 let currentProduct = 0;
-
 const products = document.querySelectorAll(".product");
 const totalProducts = products.length;
 const productSlider = document.querySelector(".product-slider");
