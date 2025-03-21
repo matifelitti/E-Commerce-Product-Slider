@@ -1,17 +1,37 @@
-# Product Slider
 
-This is a project featuring an interactive product slider built with HTML, CSS, and JavaScript. The slider displays a series of products, each with an image, title, description, and price. When the user clicks on the slider container, it navigates through the products, changing the view and the background color based on the current product.
+# 🛍️ Product Slider  
 
-## Features
+An **interactive product slider** built with **HTML, CSS, and JavaScript**. This project features a sleek and dynamic interface where users can browse through various products with smooth transitions and adaptive design.  
 
-- **Interactivity**: Clicking on the container moves the slider to the next product, creating a dynamic user experience.
-- **Background color change**: The page background color adjusts to the color associated with each product, enhancing the visual experience.
-- **Visually appealing design**: The products have an attractive and clean design with images and descriptions that provide detailed information.
+## 🚀 Features  
 
-## Project Structure
+- **🎯 Interactive Navigation** – Clicking on the slider moves to the next product, enhancing user engagement.  
+- **🎨 Dynamic Background Change** – The background color adapts based on the current product, creating a visually immersive experience.  
+- **🖼️ Clean & Modern Design** – Displays products with **images, titles, descriptions, and prices** in an aesthetically appealing layout.  
 
-The project consists of three main files:
+## 📂 Project Structure  
 
-1. **index.html**: Contains the HTML structure that organizes the products and the slider container.
-2. **styles.css**: Defines the visual styles for the slider, products, and the overall page.
-3. **script.js**: Provides the functionality to make the slider interactive and respond to user clicks.
+The project is structured into three main files:  
+
+- **📌 `index.html`** – Defines the HTML structure for the slider and product elements.  
+- **🎨 `styles.css`** – Handles the styling, layout, and animations for the slider and page.  
+- **⚡ `script.js`** – Implements functionality for product transitions and user interactions.  
+
+## 🛠️ Technologies Used  
+
+- **HTML5** – Structuring the product slider.  
+- **CSS3** – Styling, animations, and responsive design.  
+- **JavaScript (ES6+)** – Interactive functionality and dynamic effects.  
+
+## 📌 Getting Started  
+
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/matifelitti/product-slider.git  
+cd product-slider  
+```  
+
+### 2️⃣ Open the Project  
+- Locate the `index.html` file.  
+- Open it in your preferred web browser.  
+
